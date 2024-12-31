@@ -1,0 +1,252 @@
+ADD User_URL
+
+
+   http://localhost/ISMS/ADD_User/adduser.php
+
+   http://localhost/ISMS/ADD_User/view_addtable.php
+
+
+DataBase phpmyadmin
+
+
+
+infosms
+
+
+
+
+
+create table name
+  adduser
+
+ user_id
+ user_type
+ 
+
+addgroup
+
+group_id
+
+group_type
+
+
+
+User_Info/user_info
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Group url
+__________________________________
+
+           http://localhost/ISMS/add_group/group.php
+           http://localhost/ISMS/add_group/view_groupn.php
+		
+		
+		
+User_URL		
+__________________________________
+		
+          http://localhost/ISMS/User_Info/user_info.php
+          http://localhost/ISMS/User_Info/view_userinfo.php
+	   
+	   
+	   
+	   
+	   http://localhost/ISMS/ADD_User/adduser.php
+	   
+	   
+	   
+__________________________________+++++++++++++++++++++++++++++++++++++++++++++++++++____________________________________________+++++++++++++++++__________________________________
+addUser_uer
+
+CREATE TABLE adduser_type(
+    adduser_id INT AUTO_INCREMENT PRIMARY KEY,
+    adduser_type VARCHAR(150)
+  );	   
+	   
+	   
+
+
+addgrup_type
+
+
+
+CREATE TABLE addgrup_type(
+    addgroup_id INT AUTO_INCREMENT PRIMARY KEY,
+    group_type VARCHAR(170)
+  );
+
+
+
+
+
+
+"ALTER TABLE `addgrup_type` DROP `group_type`;"?
+
+
+
+
+
+
+
+
+
+
+	   
+	   
+	   
+	      http://localhost/User_infor/adduser.php
+		  
+	      http://localhost/User_infor/view_adduser.php
+		  
+		  
+		  
+		  
+	      http://localhost/User_infor/addgroup.php
+		  
+	      http://localhost/User_infor/view_group.php
+		  
+		  
+		  
+		  
+	      http://localhost/User_infor/User_info.php
+		  
+	      http://localhost/User_infor/view_userinfo.php
+		  
+		  
+		  
+		  
+Delete Table name
+____________________________	
+DROP TABLE adduser_type;
+
+	
+		  
+		                     User Type
+		  _________________________________________
+                        Regular User
+                         Outsource User
+                        Students
+                        Apprentice	  
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+User _Information DataBase Create
+
+id	user_type	first_name	last_name	email_id	password	cpassword	group_head
+						
+						
+						
+						
+						
+						
+						
+						
+CREATE TABLE user_info(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_type VARCHAR(170),
+	 first_name VARCHAR(180),
+	 last_name VARCHAR(170),
+	 email_id VARCHAR(130),
+	 password VARCHAR(180),
+	 cpassword VARCHAR(180),
+	 group_head VARCHAR(10)
+	 
+  );						
+						
+						
+						
+						
+						
+PHP (https://www.phptutorial.net/)						
+_____________________________________________
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+
+
+
+
+
+
+
+
+
+
+
+/*
+ <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $db_host = "localhost";
+    $db_user = "root";
+    $db_password = "";
+    $db_name = "asset_management";
+
+    $conn = new mysqli($db_host, $db_user, $db_password, $db_name);
+
+ if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+   Add other fields here
+       $group_id = $_POST['group_id'];
+       $group_type = $_POST['group_type'];
+     
+Insert user data into the database
+
+   $sql = "INSERT INTO addgrup_type(group_id,group_type)VALUES('$group_id','$group_type')";
+
+    $sql = "INSERT INTO addgrup_type(group_id,group_type)VALUES('$group_id','$group_type')";
+  
+    $sql = "INSERT INTO adduser_type(adduser_type)VALUES($adduser_type')";
+     Add other fields to the query
+
+    if ($conn->query($sql) === TRUE) {
+        echo "Asset added successfully";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+
+    $conn->close();
+}
+?>
+
+*/						
+
+
+CREATE TABLE addgrup_type(
+    addgroup_id INT AUTO_INCREMENT PRIMARY KEY,
+    group_type VARCHAR(170),
+	 group_type VARCHAR(170)
+  );						
